@@ -1,0 +1,182 @@
+/* avg Css experience */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Mandatory thing idk */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode */
+body {
+    background-color: #212121;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+/* wtf is wrong with this ???? */
+.dashed-border {
+    height: 98%;
+    width: 98%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    pointer-events: none;
+}
+
+.canvas-wrapper {
+    position: relative;
+    padding: 0.5em;
+    height: calc(384px * 2);
+    width: calc(576px * 2);
+    /* Light mode cuase fuck you */
+    background-color: #F5F6FA; 
+}
+
+.content {
+    padding: 1.5em;
+    z-index: 20;
+}
+
+.content-header {
+    position: static;
+    display: flex;
+    z-index: 20000;
+    justify-content: space-between;
+}
+
+/* holy this solution actually worked wow */
+.header-interactable {
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.input-main {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-self: self-end;
+}
+
+.input-main span{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: underline 2px;
+    color: #474787;
+}
+
+.input-main input {
+    font-family: Montserrat;
+    color: #212121;
+    font-size: large;
+    font-weight: 500;
+    margin-left: 0.8em;
+    border: none;
+    background: none;
+    border-bottom: 2px dotted gray;
+}
+
+.info {
+    display: flex;
+    text-decoration: underline 1px;
+    flex-flow: column;
+    font-family: Poppins;
+    text-align: right;
+    color: #474787;
+    opacity: 60%;
+}
+
+.info span {
+    margin: 0.1rem 0;
+}
+
+.info img {
+    height: 80%; 
+    vertical-align: middle;
+    margin-left: 0.8rem;
+}
+
+
+/* body */
+.body-container {
+    padding: 2em 3em;
+}
+
+.body-input {
+    display: grid;
+    grid-auto-flow: column;
+    font-family: Poppins;
+    color: #474787;
+    text-decoration: underline 2px;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1.2rem;
+    grid-auto-columns: 2fr;
+}
+
+.body-input input {
+    font-family: Montserrat;
+    color: #212121;
+    font-size: large;
+    font-weight: 500;
+    margin-left: 1em;
+    border: none;
+    background: none;
+    border-bottom: 2px dotted gray;
+    width: 22em;
+}
+
+/* table */
+.main-table {
+    margin: 2em 0 7em;
+    border: 2px solid #474787;
+    width: 100%;
+    /* wtf does this even do? */
+    border-collapse: collapse;
+}
+
+.main-table thead {
+    font-size: large;
+    font-family: Poppins;
+    color: #2C2C54;
+}
+
+
+.main-table thead th{
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+
+.main-table tbody {
+    text-align: center;
+    font-size: large;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #212121;
+}
+
+
+.main-table tbody td{
+    padding: 2rem 0;
+}
+
+th, td {
+    border: 1px solid #474787;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
