@@ -17,17 +17,16 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 /* wtf is wrong with this ???? */
 .dashed-border {
-    height: 98%;
-    width: 98%;
-    left: 50%;
-    transform: translate(-50%, 0);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
+    height: 98%;
 }
 
 .canvas-wrapper {
